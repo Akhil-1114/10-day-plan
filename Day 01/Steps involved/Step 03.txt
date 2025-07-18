@@ -1,0 +1,20 @@
+Step 03
+
+setup Minikube
+
+**Minikube lets you try out Kubernetes on your own computer.** 💻✨
+
+check minikube version
+
+minikube version
+
+
+Install minikube
+
+#git bash
+curl -Lo minikube.exe https://storage.googleapis.com/minikube/releases/latest/minikube-windows-amd64.exe \ && mkdir -p /c/minikube \ && mv minikube.exe /c/minikube \ && powershell.exe -Command "[Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path','User') + ';C:\minikube', 'User')"
+
+
+
+
+

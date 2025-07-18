@@ -1,0 +1,16 @@
+Step 02
+
+Install Docker or Hyper-V
+
+Minikube needs Docker or Hyper-V which give minikube a place to run. 🏠
+
+
+install docker
+
+check docker engine version
+docker version --format '{{.Server.Version}}'
+docker version
+
+check docker version
+docker --version
+

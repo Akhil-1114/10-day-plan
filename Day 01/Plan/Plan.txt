@@ -1,0 +1,15 @@
+Plan
+
+*Provision a Kubernetes cluster locally (Minikube) or on the cloud using modular Terraform*
+
+Modular Terraform Instead of putting all your code in one place, you Split it into small modules — each module does one job.
+
+One module builds a network (VPC)
+
+Another builds a server (EC2)
+
+Another creates access (IAM roles)
+
+Then, you connect those modules together in one main file.
+
+

@@ -1,0 +1,23 @@
+Step 01
+
+Install kubectl
+
+**kubectl is the tool you use to control Kubernetes.** 🛠️
+
+check kubectl version
+
+kubectl version --client
+
+check kubectl latest version available
+
+curl -sL https://dl.k8s.io/release/stable.txt
+
+
+upgrade kubectl
+
+download latest kubectl .exe file
+curl -LO "https://dl.k8s.io/release/v1.33.3/bin/windows/amd64/kubectl.exe"
+
+find where is kubectl .exe file
+where kubectl
+

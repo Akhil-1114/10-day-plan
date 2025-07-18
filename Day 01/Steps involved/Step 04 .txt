@@ -1,0 +1,25 @@
+Step 04
+
+bootup minikube
+
+Start minikube
+
+minikube start
+
+issue :- Docker only has 1594 MiB RAM, and Kubernetes needs at least 1800 MiB to run
+
+increase docker size
+
+locate docker location
+which docker
+where docker
+
+identify the docker environment you are in
+uname -r
+
+/proc/version
+
+echo $OSTYPE
+
+wsl --list --verbose
+
