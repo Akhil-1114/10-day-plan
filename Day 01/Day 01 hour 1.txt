@@ -1,0 +1,25 @@
+Day 01 hour 1
+
+| 🔧 Tool  | Terraform                                      |
+| -------- | ---------------------------------------------- |
+| ⏱️ Time  | 10 minutes                                     |
+| 🧠 Level | Modular, no scaffolds, K8s-ready, ArgoCD-ready |
+
+any below level 3 above level 3 equal level 3
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🎯 Goal
+Provision a Kubernetes cluster locally (Minikube) or on the cloud (simulated) using modular Terraform, with:
+
+kubeconfig access
+
+argo namespace created
+
+ArgoCD base YAMLs applied via Terraform
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+step 1
+
+create a modular terraform for minikube

@@ -1,0 +1,51 @@
+Project overview
+
+📌 Project Overview
+This project demonstrates a complete MLOps pipeline using GitOps principles, enabling automated model training, containerization, deployment, and serving within a Kubernetes environment.
+
+It combines DevOps best practices with a lightweight machine learning use case—RandomForest classification on the Iris dataset—and provides full visibility from code to deployment using tools like GitHub Actions, ArgoCD, and Sealed Secrets.
+
+🔧 DevOps Stack
+Terraform provisions infrastructure and creates a Kubernetes namespace (mlops).
+
+ArgoCD ensures continuous deployment via GitOps using k8s/argo-app.yaml.
+
+Sealed Secrets enables secure secret management for CI/CD and deployments.
+
+Kubernetes Manifests define the app deployment and service resources.
+
+GitHub Actions automates CI/CD: model training, Docker build, and push.
+
+🤖 ML Stack
+Model Training: train_model.py trains a RandomForestClassifier on the Iris dataset.
+
+Serialization: Model saved as model.pkl using joblib.
+
+Serving API: app.py exposes a REST /predict endpoint using Flask.
+
+Containerization: Dockerfile packages the model and API for production.
+
+📦 Deployment Flow
+Push code → triggers GitHub Actions.
+
+Trains model, saves model.pkl, builds & pushes Docker image.
+
+Applies Kubernetes manifests (manually or via CI/CD).
+
+ArgoCD auto-syncs and deploys the application.
+
+Live API available for real-time predictions via /predict.
+
+✅ Outputs
+GitHub Repo: mlops-gitops-project
+
+README.md includes:
+
+Setup & run instructions
+
+Terminal + ArgoCD screenshots
+
+Tool badges (e.g., Docker, ArgoCD, GitHub Actions)
+
+Optional architecture diagram
+
