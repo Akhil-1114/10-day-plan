@@ -55,3 +55,11 @@ git remote -v
 
 git push -u origin main
 
+Sometimes .gitignore is causing files/folders to be skipped. Run:
+git check-ignore -v *
+
+To check what hasn’t been pushed to GitHub:
+git log origin/main..HEAD
+
+means you have commit not pushed.
+git status -sb
