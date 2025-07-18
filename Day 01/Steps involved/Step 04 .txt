@@ -2,17 +2,37 @@ Step 04
 
 bootup minikube
 
+
+Start docker
+
+start /c/Program Files/Docker/Docker/resources/bin/docker
+
 Start minikube
 
 minikube start
+
 
 issue :- Docker only has 1594 MiB RAM, and Kubernetes needs at least 1800 MiB to run
 
 increase docker size
 
-locate docker location
+locate docker cli location
 which docker
 where docker
+
+locate docker gui location
+powershell.exe -Command "Get-ChildItem -Path 'C:\' -Recurse -Filter 'Docker Desktop.exe' -ErrorAction SilentlyContinue -Force | Select-Object -First 1 -ExpandProperty FullName"
+
+Start docker
+cmd.exe /c "start \"\" \"c:\Program Files\Docker\Docker\Docker Desktop.exe""
+
+
+PC@DESKTOP-957SB1R MINGW64 /c/Program Files/Docker/Docker
+$ while ! docker info > /dev/null 2>&1; do
+>   echo "⏳ Waiting for Docker to start..."
+>   sleep 2
+> done
+
 
 identify the docker environment you are in
 uname -r
