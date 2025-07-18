@@ -47,3 +47,11 @@ git branch -m main
 
 gh repo create "10-day-plan" --public --source=. --remote=origin --push
 
+git add .
+
+git commit -m "."
+
+git remote -v
+
+git push -u origin main
+
